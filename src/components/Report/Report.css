@@ -1,0 +1,83 @@
+.report-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-header {
+    margin-bottom: 20px;
+}
+
+.report-header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+
+.report-header p {
+    margin: 5px 0;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.section p {
+    margin: 5px 0;
+}
+
+.section strong {
+    font-weight: bold;
+}
+
+.report-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+    /* Приховуємо елементи з класом .no-print */
+    .no-print {
+        display: none !important;
+    }
+
+    .report-container {
+        border: none; /* Прибираємо рамку */
+        box-shadow: none; /* Прибираємо тінь */
+    }
+
+    .section {
+        padding: 0; /* Зменшуємо відступи */
+        border: none; /* Прибираємо рамку */
+    }
+
+    .header, .section h2, .section p {
+        page-break-inside: avoid; /* Уникаємо розривів сторінок всередині елементів */
+    }
+
+    .report-image {
+        max-width: 100%;
+        height: auto;
+        page-break-before: avoid; /* Уникаємо розривів сторінок перед зображеннями */
+        page-break-after: avoid; /* Уникаємо розривів сторінок після зображень */
+    }
+}

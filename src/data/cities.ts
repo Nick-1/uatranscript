@@ -1,0 +1,22 @@
+export const CITIES = [
+    { key: 1, value: "Дніпро" },
+    { key: 2, value: "Київ" },
+    { key: 3, value: "Львів" },
+    { key: 4, value: "Одеса" },
+    { key: 5, value: "Харків" },
+    { key: 6, value: "Запоріжжя" },
+    { key: 7, value: "Миколаїв" },
+    { key: 8, value: "Маріуполь" },
+    { key: 9, value: "Луганськ" },
+    { key: 10, value: "Вінниця" },
+    { key: 11, value: "Херсон" },
+    { key: 12, value: "Полтава" },
+    { key: 13, value: "Чернігів" },
+    { key: 14, value: "Черкаси" },
+    { key: 15, value: "Суми" },
+    { key: 16, value: "Рівне" },
+    { key: 17, value: "Івано-Франківськ" },
+    { key: 18, value: "Тернопіль" },
+    { key: 19, value: "Луцьк" },
+    { key: 20, value: "Ужгород" }
+];

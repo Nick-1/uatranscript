@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl
+):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+svg *[fill] { fill: currentColor }
+svg *[stroke] { stroke: currentColor }
+svg * {
+  transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container {
+  width: var(--layout-max-witdh);
+}
+
+.content {
+  flex: 1;
+  margin: auto;
+  padding: 0 30px;
+}
+
+:root {
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-dark-gray: #404040;
+  --color-light-gray: #C4C4C4;
+
+  --header-height: 190px;
+  --layout-max-witdh: 1280px;
+
+  --transition-duration: 0.2s;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+a, button, input, textarea, svg * {
+  transition: var(--transition-duration);
+}
+
+a:hover {
+  color: var(--color-dark-gray);
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.date-of-birth-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-of-birth-container select {
+  width: 30%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+select {
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.secondary {
+  background-color: #6c757d;
+}
+
+button.secondary:hover {
+  background-color: #5a6268;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 25px 0 10px;
+}
+
+.footer-content {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-slogan {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+.date-of-birth-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-of-birth-container input,
+.date-of-birth-container select {
+  width: 30%;
+}
+
+
+@media (max-width: 1275px) {
+  .container {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .footer {
+    row-gap: 20px;
+    padding: 25px 15px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+}

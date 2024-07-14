@@ -18,7 +18,9 @@ const PrintPage: React.FC = () => {
     const location = useLocation();
     const state = location.state as LocationState;
 
+
     return (
+        // @ts-ignore
         <Report state={state} />
     )
 };

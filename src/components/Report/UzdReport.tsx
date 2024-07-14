@@ -55,6 +55,7 @@ const UzdReport = () => {
             </div>
 
 
+            <img src="/images/report/uzd.png"  className="report-image" alt="Фото"/>
             {/*{formData.photo && <img src={URL.createObjectURL(formData.photo)}  className="report-image" alt="Фото"/>}*/}
         </>
     );

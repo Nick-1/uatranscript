@@ -17,7 +17,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
             setError('');
         } else {
             onLogin(false);
-            setError('Invalid username or password');
+            setError('Невірний логін або пароль');
         }
     };
 
@@ -43,7 +43,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
                         required
                     />
                 </div>
-                {error && <p className="error">{error}</p>}
+                {error && <p className="login-form-error">{error}</p>}
                 <button type="submit">Увійти</button>
             </form>
         </div>

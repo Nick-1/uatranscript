@@ -2,6 +2,13 @@
     max-width: 800px;
 }
 
+.login-form-error {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d20f0f;
+}
+
 .file-input-container {
     position: relative;
     width: 100%;

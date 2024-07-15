@@ -5,7 +5,7 @@ import Select from '../form/Select';
 import {CITIES} from '../../data/cities.ts';
 import {HOSPITALS} from '../../data/hospitals.ts';
 import {DOCTORS} from '../../data/doctors.ts';
-import './UserForm.css';
+import '../form/index.css';
 
 export interface FormReport {
     firstName: string;

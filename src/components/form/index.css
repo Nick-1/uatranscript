@@ -1,3 +1,7 @@
+.login-form {
+    max-width: 800px;
+}
+
 .file-input-container {
     position: relative;
     width: 100%;

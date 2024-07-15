@@ -125,7 +125,6 @@ body {
 .content {
   flex: 1;
   margin: auto;
-  padding: 0 30px;
 }
 
 :root {
@@ -135,7 +134,7 @@ body {
   --color-light-gray: #C4C4C4;
 
   --header-height: 190px;
-  --layout-max-witdh: 1280px;
+  --layout-max-witdh: 1050px;
 
   --transition-duration: 0.2s;
 }
@@ -154,7 +153,6 @@ a:hover {
 }
 
 .form-container {
-  max-width: 800px;
   margin: 50px auto;
   padding: 20px;
   background-color: #fff;
@@ -201,10 +199,6 @@ input[type="number"] {
   font-size: 16px;
   background-color: #fff;
   transition: border-color 0.3s ease-in-out;
-}
-
-select {
-
 }
 
 input[type="text"]:focus,

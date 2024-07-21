@@ -46,3 +46,13 @@
     color: #6c757d;
     text-align: center;
 }
+
+.form-info {
+    padding: 0 20px;
+}
+
+@media (max-width: 460px) {
+    .form-container {
+        margin: 10px auto!important;
+    }
+}

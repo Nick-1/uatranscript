@@ -267,6 +267,9 @@ button.secondary:hover {
   width: 30%;
 }
 
+.main-page {
+  padding: 25px 15px;
+}
 
 @media (max-width: 1275px) {
   .container {

@@ -1,7 +1,6 @@
 export const DOCTORS = [
     { key: 1, value: "Шевченко Т.Г." },
     { key: 2, value: "Франко І.Я." },
-    { key: 3, value: "Лесі Українки" },
     { key: 4, value: "Грушевський М.С." },
     { key: 5, value: "Довженко О.П." },
     { key: 6, value: "Котляревський І.П." },

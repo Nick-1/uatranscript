@@ -21,7 +21,7 @@ const Header: FC = () => {
             <nav className="header-menu">
                 <ul className="header-menu-list">
                     <li className="header-menu-item">
-                        <Link to="/" className="header-menu-link is-current">Головна</Link>
+                        <Link to="/" className="header-menu-link">Головна</Link>
                     </li>
                     <li className="header-menu-item">
                         <Link to="/rentgen" className="header-menu-link">Рентген</Link>

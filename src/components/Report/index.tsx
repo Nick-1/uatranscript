@@ -32,13 +32,13 @@ const Report = (props: ReportProps) => {
     const manageReportTitleByType = (type: string) => {
         switch (type) {
             case 'rentgen':
-                return 'Результат рентгену'
+                return 'Рентген плечового суглоба та верхньої частини плечової кістки'
             case 'kt':
-                return 'Результат КТ'
+                return 'МСКТ органів грудної клітки без в/в підсилення'
             case 'mrt':
-                return 'Результат МРТ'
+                return 'МРТ поперекового відділу хребта'
             case 'uzd':
-                return 'УЗД НИРОК'
+                return 'УЗД ОРГАНІВ ЧЕРЕВНОЇ ПОРОЖНИНИ'
         }
     }
 

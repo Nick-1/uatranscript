@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 />
                 <div className="footer-contacts">
                     <ul className="contacts-list">
-                        <li className="contacts-list-item phone">Телефон для звʼязку: +43 664 5173334</li>
+                        <li className="contacts-list-item phone">Телефон для звʼязку: +1 954 394 73 71</li>
                     </ul>
                 </div>
             </div>

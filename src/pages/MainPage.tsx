@@ -4,7 +4,7 @@ import VideoPlayer from '../components/VideoPlayer';
 const MainPage: React.FC = () => {
     return (
         <div className='main-page'>
-            <VideoPlayer src="info/main-video.mp4" />
+            <VideoPlayer src="info/main-video-1.mp4" />
             <p>
                 При будь-якому захворюванні надзвичайно важливе значення має правильне та своєчасне встановлення діагнозу,
                 що дозволяє правильно визначити тактику лікування та забезпечити одужання пацієнта та відновлення його здоров’я.
